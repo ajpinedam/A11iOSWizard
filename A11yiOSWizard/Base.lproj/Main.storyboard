@@ -1,24 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="A11yiOSWizard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GDG DevFest 2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyV-Je-3Pn">
+                                <rect key="frame" x="20" y="299" width="374" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFm-N0-Yg9">
+                                <rect key="frame" x="50" y="805" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3wN-PH-LbI"/>
+                                </constraints>
+                                <state key="normal" title="Siguiente"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bco-Rg-Tny">
+                                <rect key="frame" x="20" y="386.5" width="374" height="218"/>
+                                <string key="text">El Google Developer Group Santo Domingo invita al DevFest Santo Domingo 2021, evento apoyado por Google Developers para la comunidad de desarrolladores en República Dominicana. Es un evento donde emprendedores, desarrolladores de software, diseñadores gráficos, etc podrán recibir charlas sobre tecnología de software, principalmente enfocado a herramientas open source y tecnologías de Google.</string>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nov 12, 2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bke-dM-Ibt">
+                                <rect key="frame" x="20" y="684.5" width="374" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devFestImage" translatesAutoresizingMaskIntoConstraints="NO" id="p7G-vm-jMn">
+                                <rect key="frame" x="97" y="59" width="220" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="fzh-zX-kca"/>
+                                    <constraint firstAttribute="width" constant="220" id="m3t-Vt-aFW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tFm-N0-Yg9" secondAttribute="bottom" constant="7" id="0xa-gT-ZRT"/>
+                            <constraint firstItem="bke-dM-Ibt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Ua-Dg-Pk2"/>
+                            <constraint firstItem="bco-Rg-Tny" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FYx-8d-X6x"/>
+                            <constraint firstItem="tFm-N0-Yg9" firstAttribute="top" relation="lessThanOrEqual" secondItem="bke-dM-Ibt" secondAttribute="bottom" constant="141" id="H9H-yg-XYN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p7G-vm-jMn" secondAttribute="trailing" constant="97" id="LfJ-x0-cg6"/>
+                            <constraint firstItem="iyV-Je-3Pn" firstAttribute="top" secondItem="p7G-vm-jMn" secondAttribute="bottom" constant="20" id="Li2-Kn-5ph"/>
+                            <constraint firstItem="p7G-vm-jMn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="McP-xd-t8f"/>
+                            <constraint firstItem="bke-dM-Ibt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N3o-Gm-8CV"/>
+                            <constraint firstItem="tFm-N0-Yg9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Owt-D3-FNn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bco-Rg-Tny" secondAttribute="trailing" constant="20" id="QDd-cI-Kqi"/>
+                            <constraint firstItem="bke-dM-Ibt" firstAttribute="top" secondItem="bco-Rg-Tny" secondAttribute="bottom" constant="80" id="UGP-2L-oL7"/>
+                            <constraint firstItem="iyV-Je-3Pn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VBg-zW-pgk"/>
+                            <constraint firstItem="bco-Rg-Tny" firstAttribute="top" secondItem="iyV-Je-3Pn" secondAttribute="bottom" constant="60" id="YvB-Fz-eZd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iyV-Je-3Pn" secondAttribute="trailing" constant="20" id="aDj-wI-TEs"/>
+                            <constraint firstItem="tFm-N0-Yg9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="d2P-2N-SYT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tFm-N0-Yg9" secondAttribute="trailing" constant="50" id="eoZ-nk-NcF"/>
+                            <constraint firstItem="p7G-vm-jMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="iVj-km-sMS"/>
+                            <constraint firstItem="iyV-Je-3Pn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oaM-rj-pc5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bke-dM-Ibt" secondAttribute="trailing" constant="20" id="rOc-So-Cr3"/>
+                            <constraint firstItem="bco-Rg-Tny" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u84-w8-1pI"/>
+                            <constraint firstItem="p7G-vm-jMn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="z3X-lc-vre"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="devFestImage" width="2160" height="2160"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
